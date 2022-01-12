@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Button, Card, Elevation } from "@blueprintjs/core";
+import { Card, Elevation } from "@blueprintjs/core";
 
 function Tick() {
   ReactDOM.render(
@@ -23,7 +23,6 @@ function Tick() {
         <a href="#">Timer walk every 30 sec</a>
       </h5>
       <h3>Timer: {new Date().toLocaleTimeString()}</h3>
-      <Button>Хай</Button>
     </Card>,
     document.getElementById("root")
   );
