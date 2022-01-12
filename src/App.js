@@ -10,8 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h3>Hello, world!</h3>
-        <h1>Time now(30s): {new Date().toLocaleTimeString()}</h1>
+        <h3>Hello!</h3>
       </>
     );
   }

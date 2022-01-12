@@ -3,15 +3,28 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Button, Card, Elevation } from "@blueprintjs/core";
 
 function Tick() {
   ReactDOM.render(
-    (
-      <>
-      <h3>Hello, world!</h3>
-      <h1>Time now(30s): {new Date().toLocaleTimeString()}</h1>
-    </>
-    ),
+    <Card
+      interactive={true}
+      elevation={Elevation.TWO}
+      style={{
+        maxWidth: "50%",
+        textAlign: "center",
+        marginLeft: "10%",
+        marginTop: "10%",
+        float: "left",
+        border: "round solid",
+      }}
+    >
+      <h5>
+        <a href="#">Timer walk every 30 sec</a>
+      </h5>
+      <h3>Timer: {new Date().toLocaleTimeString()}</h3>
+      <Button>Хай</Button>
+    </Card>,
     document.getElementById("root")
   );
 }
